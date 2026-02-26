@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #fff0f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Message Section */
+.message {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.message h2 {
+    color: #ff4d6d;
+    margin-bottom: 20px;
+}
+
+/* Memories Section */
+.memories {
+    background: #ffe6eb;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.memories h2 {
+    color: #d6336c;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.note {
+    margin-top: 25px;
+    font-style: italic;
+}
+
+/* Forever Section */
+.forever {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.forever h2 {
+    color: #ff4d6d;
+    margin-bottom: 20px;
+}
+
+.signature {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background: #ffccd5;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
