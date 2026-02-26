@@ -2,67 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>For You, Always</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, Always ❤️</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section class="hero">
-        <h1>For the Love of My Life ❤️</h1>
+        <h1>For the Love of My Life</h1>
         <p>
-            I once forgot to update this website,  
+            I may have forgotten to update a website once,  
             but I never forgot <span>you</span>.
         </p>
     </section>
 
-    <!-- Message Section -->
+    <!-- MESSAGE -->
     <section class="message">
-        <h2>A Promise I Still Keep</h2>
+        <h2>A Promise That Never Broke</h2>
         <p>
-            This website is proof that my love never disappeared.  
-            Time passed, life happened, mistakes were made —  
-            but my heart never moved away from you.
+            Time passed. Silence happened.  
+            But love doesn’t disappear just because life gets heavy.
         </p>
         <p>
-            Just like this page, my love may pause,  
-            but it never ends.
+            This page exists because you still do —  
+            in my heart, every single day.
         </p>
     </section>
 
-    <!-- Memories Section -->
+    <!-- MEMORIES -->
     <section class="memories">
-        <h2>Us, In Every Moment</h2>
+        <h2>Our Moments 💞</h2>
 
         <div class="gallery">
-    <img src="images/memory1.jpg" alt="Our Memory 1">
-    <img src="images/memory2.jpg" alt="Our Memory 2">
-    <img src="images/memory3.jpg" alt="Our Memory 3">
-    <img src="images/memory4.jpg" alt="Our Memory 4">
+            <img src="images/memory1.jpg" alt="Memory 1" onclick="openImage(this)">
+            <img src="images/memory2.jpg" alt="Memory 2" onclick="openImage(this)">
+            <img src="images/memory3.jpg" alt="Memory 3" onclick="openImage(this)">
+            <img src="images/memory4.jpg" alt="Memory 4" onclick="openImage(this)">
         </div>
 
         <p class="note">
-            These photos are random,  
-            but my feelings for you never are.
+            Every photo holds a piece of us.
         </p>
     </section>
 
-    <!-- Forever Section -->
+    <!-- FOREVER -->
     <section class="forever">
-        <h2>Forever Isn’t a Word</h2>
+        <h2>Forever Is a Choice</h2>
         <p>
-            It’s a choice.  
-            And I choose you —  
-            again and again.
+            And even after everything —  
+            I still choose you.
         </p>
-        <p class="signature">
-            — Yours, Always
-        </p>
+        <p class="signature">— Yours, Always</p>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>Made with love, just for you ❤️</p>
+        <p>Made with love ❤️</p>
     </footer>
+
+    <!-- IMAGE MODAL -->
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <img id="modalImg">
+    </div>
+
+    <!-- JS -->
+    <script>
+        function openImage(img) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImg");
+            modalImg.src = img.src;
+            modal.classList.add("show");
+        }
+
+        function closeImage() {
+            document.getElementById("imageModal").classList.remove("show");
+        }
+    </script>
 
 </body>
 </html>
